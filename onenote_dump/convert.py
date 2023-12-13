@@ -58,13 +58,15 @@ class Converter:
         parent_tag = self.page.get("parentSection", {}).get("displayName", "")
         if parent_tag:
             tags.append(parent_tag)
-        return textwrap.dedent( #修改metadata
+        return textwrap.dedent( #修改metadata  #tags: [{', '.join(tags)}]
             f"""
             ---
             title: "{self.page.get('title')}"
             date: {self.page.get('createdDateTime')}
             modified: {self.page.get('lastModifiedDateTime')}
-            tags: [{', '.join(tags)}]
+            tags: 
+            - {self.notebook}
+            - {tags[-1]}
             categories:
             - {tags[-1]}
             ---
