@@ -1,6 +1,6 @@
 # onenote-dump for Notable
 
-不同于原作者[https://github.com/genericmoniker/onenote-dump]按Notable的格式导出，本项目将OneNote笔记本转化成 MkDocs 博客发布所需的格式。
+不同于原作者[https://github.com/genericmoniker/onenote-dump],按Notable的格式导出，本项目将OneNote笔记本转化成 MkDocs 博客发布所需的格式。
 
 ## Installation
 
