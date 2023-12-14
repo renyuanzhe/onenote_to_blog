@@ -183,7 +183,7 @@ class Converter:
             url = download_img(self.s, url, mime_type, self.attach_dir)
         alt = tag.get("alt")
         alt='None'
-        return f"![{alt}]({url})"
+        return f"![{alt}]({url}) \n \n"
 
     def handle_object(self, tag, content):
         url = tag.get("data")
